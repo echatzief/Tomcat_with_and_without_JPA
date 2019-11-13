@@ -1,0 +1,56 @@
+<web-app>
+<welcome-file-list>
+   <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+
+<servlet>
+   <servlet-name>RegNormal</servlet-name>
+   <servlet-class>Register</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>Reg</servlet-name>
+   <servlet-class>RegisterJPA</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>LoginNormal</servlet-name>
+   <servlet-class>Login</servlet-class>
+</servlet>
+
+<servlet>
+   <servlet-name>LoginJPA</servlet-name>
+   <servlet-class>LoginJPA</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+   <servlet-name>RegNormal</servlet-name>
+   <url-pattern>/createUserBasic</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>Reg</servlet-name>
+   <url-pattern>/createUserJPA</url-pattern>
+</servlet-mapping>
+
+<servlet-mapping>
+   <servlet-name>LoginNormal</servlet-name>
+   <url-pattern>/loginBasic</url-pattern>
+</servlet-mapping>
+
+
+<servlet-mapping>
+   <servlet-name>LoginJPA</servlet-name>
+   <url-pattern>/loginJPA</url-pattern>
+</servlet-mapping>
+
+</web-app>
+
+
+
+
+
+
+
+
